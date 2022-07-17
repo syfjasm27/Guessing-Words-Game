@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Guess Game</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' href='style.css'>
+</head>
+<body>
+  <div class="points"> <div><h3>WOW! Finally You have one point now, ambitious to reach to 10 point</h3> <button class="point-btn">Continues</button></div></div>
+  <div class="success"> <div><h3>Congralutation! Click Below To Complete</h3> <button class="success-btn">Next</button></div></div>
+  <div class="failed"> <div><h3>Sorry , The Game Is Ending You Are Failing</h3> <button class="failed-btn">Reload</button></div></div>
+  <div class="container">
+    <div class="header"><h1>Guess the words</h1></div>
+    <div class="box-guess">
+      <div class="point-count"></div>
+      <div class="series"></div>
+      <input type="text" class="typing-guess">
+      <div class="inputs">
+      </div>
+      <div class="help">
+        <p class="hint">Related word: <span></span></p>
+        <p class="remain">Remaining guesses: <span></span></p>
+        <p class="wrong">wrong letters: <span></span></p>
+      </div>
+      <div class="reset-btn">
+        <button class="reset">Reset Game</button>
+      </div>
+    </div>
+  </div>
+
+  <audio class="fail" src="fail.mp3" controls></audio>
+  <audio class="full-fail" src="fullFail.mp3" controls></audio>
+  <audio class="success" src="success.mp3" controls></audio>
+  <audio class="full-success" src="fullSuccess.mp3" controls></audio>
+  <script src='script.js'></script>
+</body>
+</html>
